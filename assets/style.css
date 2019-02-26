@@ -1,0 +1,18 @@
+.container-fluid {
+  background-color: red;
+  height:1200px;
+}
+
+
+[class*="col-"], footer {
+  background-color: lightgreen;
+  border: 1px solid black;
+  line-height: 40px;
+  text-align: center;
+}
+
+
+.fondheader{
+  background-color: blue;
+  height: 200px;
+}
