@@ -3,35 +3,113 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <script type="text/javascript" src= "assets/main.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Laila" rel="stylesheet">
     <title>Padé Sushi</title>
   </head>
   <body>
     <div class="container-fluid">
-        <header class="row">
-          <div class="col-lg-12 fondheader"></div>
-          <nav class="col-sm-12 bg-dark navbar-dark sticky-top">
-            Navbar
+      <header class="row">
+        <div class="col-12 fondheader">
+          <nav class="col-12 navbar navbar-expand navbar-dark bg-dark fixed-top brand" data-toggle="sticky-onscroll">
+            <span><a class="navbar-brand ml-2 brand" href="#">
+              <img src="assets/img/logo.jpg" alt="Logo" style="width:40px">
+              <h1>Padé Sushi</h1>
+            </a></span>
+            <ul class="navbar-nav ml-auto mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Carte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Restaurants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="col-2 mr-2 connexion">Bonjour Prénom</div>
           </nav>
-        </header>
-        <main>
-          <div class="row">
-            <div class="jumbotron col-sm-11 mt-lg-4 ml-lg-auto mr-lg-auto"></div>
+        </div>
+      </header>
+      <main>
+        <div class="row">
+          <div class="jumbotron col-11 ml-auto mr-auto"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-xs-10 panneauPlat">
+            <div class="bordure">
+              <h3>Propositions du jour</h3>
+              <div id="contentNew">
+                <img src="assets/img/platJour.jpg"/>
+              </div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col-sm-4 ml-lg-5">Plat de jour</div>
-            <div class="col-sm-4 mr-lg-5 ml-lg-auto">Nouveautés</div>
+          <div class="col-lg-4 col-xs-10 ml-auto panneauNouv">
+            <div class="bordure">
+              <h3>Nouveautés</h3>
+              <div id="contentNew">
+                <div id="firstLineNew">
+                  <div id="firstNew">
+                    <p>Maki Saumon</p>
+                    <img src="assets/img/MakiSaumon.jpg"/>
+                  </div>
+                  <div id="secondNew">
+                    <p>Sushi Nigiri Shiromi</p>
+                    <img src="assets/img/SushiBlanc.jpg"/>
+                  </div>
+                </div>
+                <div id="secondLineNew">
+                  <div id="thirdNew">
+                    <p>Sushi Nigiri Saumon</p>
+                    <img src="assets/img/SushiSaumon.jpg"/>
+                  </div>
+                  <div id="fourthNew">
+                    <p>Maki Concombre</p>
+                    <img src="assets/img/MakiAlgue.jpg"/>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </main>
-        <footer class="row">
-          <div class="col-sm-12">
-            Pied de page
+        </div>
+      </main>
+      <footer class="row  bg-dark footer">
+        <div class="row firstlineFooter">
+          <div class="col-6 follow">
+            <i class="far fa-flag"></i>
+            <h5>Suivez-nous!</h5>
+            <img src="assets/img/icon-youtube.png"/>
+            <img src="assets/img/icon-twitter.png"/>
+            <img src="assets/img/icon-facebook.png"/>
+            <img src="assets/img/icon-instagram.png"/>
           </div>
-        </footer>
-      </div>
+          <div class="col-6 mobile">
+            <i class="fas fa-mobile-alt"></i>
+            <h5>Application mobile</h5>
+            <img src="assets/img/icon-appstore.png"/>
+            <img src="assets/img/icon-playstore.png"/>
+          </div>
+        </div>
+        <div class="row secondlineFooter">
+          <div class="col-9 ml-auto mr-auto copyright">
+            <p>© 2019 Padé Sushi | All Rights Reserved | Designed by BINON Frédéric</p>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+      <script type="text/javascript" src= "assets/main.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </body>
 </html>
