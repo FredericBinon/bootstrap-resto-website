@@ -49,3 +49,6 @@ Create a website for a fictitious restaurant franchise. Request.
  
 - On the opening of the Home page, a pop-up appears, asking the firstname and returning it in the page.
 - Showing if the restaurant is open at the current real hour and day.
+
+
+# NOT FINISHED
