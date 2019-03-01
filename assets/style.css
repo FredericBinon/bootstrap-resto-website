@@ -85,6 +85,7 @@ main{
 
 h3{
   margin-bottom: 0px !important;
+  display: block;
 }
 
 .panneauPlat{
@@ -146,4 +147,58 @@ h3{
 
 .copyright{
   border-top: 1.5px solid grey;
+}
+
+
+/* ---------------------------------- Menu Page ------------------------------------------ */
+
+
+.list-group.list-group-horizontal{
+	display: flex;
+	flex-direction: row;
+}
+
+.list-group.list-group-horizontal .list-group-item {
+	margin-bottom: 0;
+	margin-right: 0;
+ 	border-right-width: 0;
+  padding: 20px 20px 20px 20px;
+  min-width: 100px;
+  text-align: center;
+  font-family: 'Laila', serif !important;
+}
+
+.list-group.list-group-horizontal .list-group-item:first-child {
+	border-top-right-radius:0;
+	border-bottom-left-radius:4px;
+}
+.list-group.list-group-horizontal .list-group-item:last-child {
+	border-top-right-radius:4px;
+	border-bottom-left-radius:0;
+	border-right-width: 1px;
+}
+
+.list-group-horizontal a:hover{
+  text-decoration: none!important;
+}
+
+.list-group-horizontal a:hover li {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-decoration: none!important;
+}
+
+h4{
+  padding-top: 60px!important;
+  margin-bottom: 0px!important;
+  padding-left: 30px;
+}
+
+hr{
+  margin-top: 0px!important;
+}
+
+.images img{
+  margin-left: 3%;
+  margin-bottom: 1%;
+  height:20%;
 }
