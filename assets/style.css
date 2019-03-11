@@ -1,5 +1,5 @@
 body{
-  /* overflow-x: hidden!important; */
+  overflow-x: hidden!important;
 }
 .container-fluid {
   background-color: #DCFFD6;
@@ -32,19 +32,29 @@ header{
   margin-bottom: 40px;
   background-image: url("img/header.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding: 0px 0px 0px 0px !important;
-  display: flex;
   height:340px;
   min-height: 30px;
-  justify-content: center;
   color: rgba(255, 255, 255, 0.7)!important;
 }
 
 .fondheader:hover{
-  background-image: url("img/bg2.jpg");
-  background-size: cover;
   color:#484848!important;
+}
+
+.annonce{
+  justify-content: center;
+  display: flex;
+}
+
+.presentation{
+  width:40%;
+  display: none;
+  text-align: left;
+  margin-top: 1%;
+  font-weight: bold;
+  text-align: center;
 }
 
 .fondheader img{
@@ -163,6 +173,10 @@ h3{
   width:140px;
 }
 
+.follow img:hover, .mobile img:hover{
+  cursor: pointer;
+}
+
 .firstlineFooter{
   padding-bottom: 1%;
 }
@@ -219,6 +233,15 @@ hr{
   margin-top: 0px!important;
 }
 
+.pieces{
+  font-size: 0.9rem;
+  font-family: 'Laila', serif !important;
+}
+
+.images{
+  margin-left: 2%;
+}
+
 .images img{
   margin-left: 3%;
   margin-bottom: 1%;
@@ -227,13 +250,101 @@ hr{
 
 /* ---------------------------------- Restaurants Page ------------------------------------------ */
 
+.date{
+  padding-top: 0.5%;
+  height:40px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#findUs{
+  margin-bottom: 3%!important;
+}
+
+.ouvertParis, .ouvertBruxelles, .ouvertQeqertanut{
+  display: none;
+  color:green;
+}
+
 .enseigne{
   height: auto;
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
   font-family: 'Laila', serif !important;
-  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.enseigne:hover{
+  cursor:pointer;
+}
+
+.enseigne h3{
+  font-family: inherit;
+  margin-bottom: 8%!important;
 }
 
 .enseigne img{
   width: 100%!important;
+}
+
+.map{
+  margin-top: 3%;
+  background-color: rgba(0, 0, 0, 0.1);
+  min-height:5%;
+  height: auto;
+  padding: 1% 0px 1% 0px;
+}
+
+.map p{
+  margin-bottom: 0px!important;
+  font-size: 0.9rem;
+}
+
+
+/* --------------------------------- Photos page ------------------------------------------------------- */
+
+.photos img{
+  height:170px;
+  margin: 2.7%;
+}
+
+.photos{
+  display: flex!important;
+  justify-content: center!important;
+}
+
+/* --------------------------------- Contact page ------------------------------------------------------- */
+
+#form{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%!important;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding:1.5%;
+  border-radius: 15px;
+  font-family: 'Gochi Hand', cursive !important;
+}
+
+#personneForm{
+  display: flex;
+}
+
+#personneForm input{
+  width:48%!important;
+}
+
+.form-group{
+  display: flex;
+  margin-bottom: 0px!important;
+}
+
+option{
+  text-align: center;
+}
+
+#reservResto, #reservJour, #reservParis, #reservBruxelles, #reservQeqertanut{
+  display: none;
+}
+
+.buttonEnvoyer{
+  display: flex;
+  justify-content: flex-end;
 }

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Laila" rel="stylesheet">
-    <title>Padé Sushi</title>
+    <title>Padè Sushi</title>
   </head>
   <body>
     <div class="container-fluid">
@@ -17,7 +17,7 @@
         <nav class="col-12 navbar navbar-expand navbar-dark bg-dark fixed-top brand" data-toggle="sticky-onscroll">
           <span><a class="navbar-brand ml-2 brand" href="index.html">
             <img src="assets/img/logoNoir.png" alt="logo" srcset="assets/img/logoNoir.svg" style="width:40px">
-            <h1>Padé Sushi</h1>
+            <h1>Padè Sushi</h1>
           </a></span>
           <ul class="navbar-nav ml-auto mr-auto">
             <li class="nav-item">
@@ -30,37 +30,60 @@
               <a class="nav-link" href="restos.html">Restaurants</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Photos</a>
+              <a class="nav-link" href="photo.html">Photos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          <div class="col-2 mr-2 connexion">Bonjour Prénom</div>
+          <div class="col-2 mr-2 connexion"></div>
         </nav>
         <div class="col-12 fondheader">
-          <img src="assets/img/logoVert.png" alt="BigLogo" srcset="assets/img/logoVert.svg">
-          <h2>Padé Sushi</h2>
+          <div class="annonce">
+            <img class="logoheader" src="assets/img/logoVert.png" alt="BigLogo" srcset="assets/img/logoVert.svg">
+            <h2>Padè Sushi</h2>
+          </div>
+          <div class="presentation">
+            <p>Bruxelles - Paris - Qeqertanut</p>
+            <p>Ouverts tous les jours sauf le lundi</p>
+            <p>Réservations possibles jusque 21h00 compris</p>
+          </div>
         </div>
       </header>
       <main>
         <div class="row">
+          <div class="col-5 ml-auto mr-auto mb-3 date">
+          </div>
           <div class="col-12">
-            <h2>Où Nous trouver ?</h2>
+            <h2 id="findUs">Où Nous trouver ?</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-3 ml-auto mr-auto enseigne">
+          <button class="col-3 ml-auto mr-auto enseigne paris">
             <h3>Paris</h3>
-          </div>
-          <div class="col-3 ml-auto mr-auto enseigne">
+            <p>24 Rue Barbet de Jouy<br/>75007 Paris<br/>France</p>
+            <p>Fermè le lundi</p>
+            <p class="ouvertureParis">Ouvert de 10h á 01h00</p>
+            <p class="ouvertParis"></p>
+          </button>
+          <button class="col-3 ml-auto mr-auto enseigne bruxelles">
             <h3>Bruxelles</h3>
-          </div>
-          <div class="col-3 ml-auto mr-auto enseigne">
+            <p>Square de l'Atomium<br/>1020 Bruxelles<br/>Belgique</p>
+            <p>Fermè le lundi</p>
+            <p class="ouvertureBruxelles">Ouvert de 12h00 á 23h</p>
+            <p class="ouvertBruxelles"></p>
+          </button>
+          <button class="col-3 ml-auto mr-auto enseigne qeqertanut">
             <h3>Groenland</h3>
             <p>Qeqertanut<br/>Nuuk 3905</br>Groenland</p>
-            <p>Ouvert de 11h30 à 22h</p>
-            <img src="assets/img/Groenland.png" alt="Restaurant Groenland">
+            <p>Fermè le lundi</p>
+            <p class="ouvertureQeqertanut">Ouvert de 11h á 22h</p>
+            <p class="ouvertqeqertanut"></p>
+          </button>
+          <div class="row">
+            <div class="col-5 ml-auto mr-auto map">
+              <p>Cliquez sur un de nos restaurants afin de le trouver sur le trouver sur la carte.</p>
+            </div>
           </div>
         </div>
       </main>
@@ -89,7 +112,7 @@
       </footer>
     </div>
 
-      <script type="text/javascript" src= "assets/main.js"></script>
+      <script type="text/javascript" src= "assets/restos.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </body>
 </html>

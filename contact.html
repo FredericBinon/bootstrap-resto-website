@@ -17,7 +17,7 @@
         <nav class="col-12 navbar navbar-expand navbar-dark bg-dark fixed-top brand" data-toggle="sticky-onscroll">
           <span><a class="navbar-brand ml-2 brand" href="index.html">
             <img src="assets/img/logoNoir.png" alt="logo" srcset="assets/img/logoNoir.svg" style="width:40px">
-            <h1>Padé Sushi</h1>
+            <h1>Padè Sushi</h1>
           </a></span>
           <ul class="navbar-nav ml-auto mr-auto">
             <li class="nav-item">
@@ -30,20 +30,139 @@
               <a class="nav-link" href="restos.html">Restaurants</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Photos</a>
+              <a class="nav-link" href="photo.html">Photos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          <div class="col-2 mr-2 connexion">Bonjour Prénom</div>
+          <div class="col-2 mr-2 connexion"></div>
         </nav>
         <div class="col-12 fondheader">
-          <img src="assets/img/logoVert.png" alt="BigLogo" srcset="assets/img/logoVert.svg">
-          <h2>Padé Sushi</h2>
+          <div class="annonce">
+            <img class="logoheader" src="assets/img/logoVert.png" alt="BigLogo" srcset="assets/img/logoVert.svg">
+            <h2>Padè Sushi</h2>
+          </div>
+          <div class="presentation">
+            <p>Bruxelles - Paris - Qeqertanut</p>
+            <p>Ouverts tous les jours sauf le lundi</p>
+            <p>Réservations possibles jusque 21h00 compris</p>
+          </div>
         </div>
       </header>
       <main>
+        <form id="form">
+          <div id="personneForm">
+                <input type="text" class="form-control mr-auto" placeholder="NOM">
+                <input type="text" class="form-control ml-auto" placeholder="Prénom">
+          </div>
+          <div class="input-group col-7 mt-4 ml-auto mr-auto">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input type="email" class="form-control ml-auto" placeholder="mail@example.com">
+          </div>
+          <div class="form-group">
+            <select class="form-control col-2 mr-1 mt-4" id="list" name="list">
+              <option hidden >Sujet</option>
+              <option value="1">Remarque</option>
+              <option value="2">Réservation</option>
+              <option value="3">Question</option>
+              <option value="4">Retour positif</option>
+            </select>
+            <select class="form-control col-2 mr-1 mt-4" id="reservResto" name="listresto">
+              <option hidden >Restaurant</option>
+              <option value="paris">Paris</option>
+              <option value="bruxelles">Bruxelles</option>
+              <option value="qeqertanut">Qeqertanut</option>
+            </select>
+            <select class="form-control col-2 mr-1 mt-4" id="reservJour" name="listjour">
+              <option hidden >Jour</option>
+              <option>Mardi</option>
+              <option>Mercredi</option>
+              <option>Jeudi</option>
+              <option>Vendredi</option>
+              <option>Samedi</option>
+              <option>Dimanche</option>
+            </select>
+            <select class="form-control col-1 mr-1 mt-4" id="reservParis" name="listHeureParis">
+              <option hidden >Heure</option>
+              <option>10:00</option>
+              <option>10:30</option>
+              <option>11:00</option>
+              <option>11:30</option>
+              <option>12:00</option>
+              <option>12:30</option>
+              <option>13:00</option>
+              <option>13:30</option>
+              <option>14:00</option>
+              <option>14:30</option>
+              <option>15:00</option>
+              <option>15:30</option>
+              <option>16:00</option>
+              <option>16:30</option>
+              <option>17:00</option>
+              <option>17:30</option>
+              <option>18:00</option>
+              <option>18:30</option>
+              <option>19:00</option>
+              <option>19:30</option>
+              <option>20:00</option>
+              <option>20:30</option>
+              <option>21:00</option>
+            </select>
+            <select class="form-control col-1 mr-1 mt-4" id="reservBruxelles" name="listHeureBruxelles">
+              <option hidden >Heure</option>
+              <option>12:00</option>
+              <option>12:30</option>
+              <option>13:00</option>
+              <option>13:30</option>
+              <option>14:00</option>
+              <option>14:30</option>
+              <option>15:00</option>
+              <option>15:30</option>
+              <option>16:00</option>
+              <option>16:30</option>
+              <option>17:00</option>
+              <option>17:30</option>
+              <option>18:00</option>
+              <option>18:30</option>
+              <option>19:00</option>
+              <option>19:30</option>
+              <option>20:00</option>
+              <option>20:30</option>
+              <option>21:00</option>
+            </select>
+            <select class="form-control col-1 mr-1 mt-4" id="reservQeqertanut" name="listHeureQeqertanut">
+              <option hidden >Heure</option>
+              <option>11:00</option>
+              <option>11:30</option>
+              <option>12:00</option>
+              <option>12:30</option>
+              <option>13:00</option>
+              <option>13:30</option>
+              <option>14:00</option>
+              <option>14:30</option>
+              <option>15:00</option>
+              <option>15:30</option>
+              <option>16:00</option>
+              <option>16:30</option>
+              <option>17:00</option>
+              <option>17:30</option>
+              <option>18:00</option>
+              <option>18:30</option>
+              <option>19:00</option>
+              <option>19:30</option>
+              <option>20:00</option>
+              <option>20:30</option>
+              <option>21:00</option>
+            </select>
+          </div>
+          <textarea class="form-control mt-1" rows="4" id="comment" placeholder="Your Text"></textarea>
+          <div class="row buttonEnvoyer">
+            <button type="button" class="btn btn-outline-info mt-4  mr-5"><i class="fas fa-angle-right"></i>  Envoyer</button>
+          </div>
+        </form>
 
       </main>
       <footer class="row  bg-dark footer">
@@ -71,7 +190,7 @@
       </footer>
     </div>
 
-      <script type="text/javascript" src= "assets/main.js"></script>
+      <script type="text/javascript" src= "assets/contact.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </body>
 </html>
